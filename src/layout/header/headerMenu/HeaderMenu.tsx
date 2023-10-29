@@ -5,32 +5,34 @@ import {theme} from '../../../styles/Theme';
 
 export const HeaderMenu = (props: { menuItems: Array<string> }) => {
     return (
-        <nav>
-            <StyledHeaderMenu>
-                <ul>
-                    {props.menuItems.map((item, index) => {
-                        return <ListItem key={index}>
-                            <Link href="">
-                                {item}
-                                <Mask>
-                                    <span>{item}</span>
-                                </Mask>
-                                <Mask>
-                                    <span>{item}</span>
-                                </Mask>
-                            </Link></ListItem>
-                    })}
-                </ul>
-            </StyledHeaderMenu>
-        </nav>
+        <StyledHeaderMenu>
+            <ul>
+                {props.menuItems.map((item, index) => {
+                    return <ListItem key={index}>
+                        <Link href="">
+                            {item}
+                            <Mask>
+                                <span>{item}</span>
+                            </Mask>
+                            <Mask>
+                                <span>{item}</span>
+                            </Mask>
+                        </Link></ListItem>
+                })}
+            </ul>
+        </StyledHeaderMenu>
     );
 };
 
-const StyledHeaderMenu = styled.header`
+const StyledHeaderMenu = styled.nav`
   ul {
     display: flex;
     gap: 30px;
     justify-content: center;
+  }
+
+  @media ${theme.media.tablet} {
+    display: none;
   }
 `
 
