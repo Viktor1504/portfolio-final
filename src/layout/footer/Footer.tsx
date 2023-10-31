@@ -15,8 +15,7 @@ const socialItemsData = [
     },
     {
         iconId: 'linkedin'
-    },
-
+    }
 ]
 
 export const Footer: React.FC = () => {
