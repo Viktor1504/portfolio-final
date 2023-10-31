@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import {theme} from '../../styles/Theme';
+import {theme} from '../styles/Theme';
 
 export const Button = styled.button`
   font-size: 14px;
@@ -25,6 +25,7 @@ export const Button = styled.button`
     height: 10px;
     width: 50%;
     background-color: ${theme.colors.accent};
+    transition: ${theme.animations.transition};
 
     position: absolute;
     bottom: 0;

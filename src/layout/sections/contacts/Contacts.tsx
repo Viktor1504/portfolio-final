@@ -1,6 +1,6 @@
 import React from 'react';
 import {SectionTitle} from '../../../components/SectionTitle';
-import {Button} from '../../../components/slider/Button';
+import {Button} from '../../../components/Button';
 import {Container} from '../../../components/Container';
 import {S} from './Contacts_Styles'
 

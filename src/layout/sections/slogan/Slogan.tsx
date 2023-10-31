@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import {SectionTitle} from '../../../components/SectionTitle';
-import {Button} from '../../../components/slider/Button';
+import {Button} from '../../../components/Button';
 import {Container} from '../../../components/Container';
 import {FlexWrapper} from '../../../components/FlexWrapper';
 
